@@ -1,0 +1,20 @@
+<svg id="England" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <circle id="Ellipse_18" data-name="Ellipse 18" cx="12" cy="12" r="12" fill="#f0f0f0"/>
+  <g id="Group_54" data-name="Group 54" transform="translate(0.413 0.413)">
+    <path id="Path_31" data-name="Path 31" d="M10.886,100.142a11.956,11.956,0,0,0-2.067,4.175h6.243Z" transform="translate(-8.819 -95.861)" fill="#0052b4"/>
+    <path id="Path_32" data-name="Path 32" d="M376.248,104.318a11.957,11.957,0,0,0-2.067-4.175l-4.175,4.175Z" transform="translate(-353.074 -95.862)" fill="#0052b4"/>
+    <path id="Path_33" data-name="Path 33" d="M8.819,322.784a11.957,11.957,0,0,0,2.067,4.175l4.175-4.175Z" transform="translate(-8.819 -308.067)" fill="#0052b4"/>
+    <path id="Path_34" data-name="Path 34" d="M326.957,10.886a11.957,11.957,0,0,0-4.175-2.067v6.243Z" transform="translate(-308.065 -8.819)" fill="#0052b4"/>
+    <path id="Path_35" data-name="Path 35" d="M100.142,374.18a11.957,11.957,0,0,0,4.175,2.067v-6.243Z" transform="translate(-95.861 -353.074)" fill="#0052b4"/>
+    <path id="Path_36" data-name="Path 36" d="M104.317,8.819a11.957,11.957,0,0,0-4.175,2.067l4.175,4.175Z" transform="translate(-95.861 -8.819)" fill="#0052b4"/>
+    <path id="Path_37" data-name="Path 37" d="M322.783,376.248a11.956,11.956,0,0,0,4.175-2.067l-4.175-4.175Z" transform="translate(-308.066 -353.074)" fill="#0052b4"/>
+    <path id="Path_38" data-name="Path 38" d="M370.005,322.784l4.175,4.175a11.957,11.957,0,0,0,2.067-4.175Z" transform="translate(-353.074 -308.067)" fill="#0052b4"/>
+  </g>
+  <g id="Group_55" data-name="Group 55">
+    <path id="Path_39" data-name="Path 39" d="M23.9,10.435H13.565V.1a12.11,12.11,0,0,0-3.13,0V10.435H.1a12.11,12.11,0,0,0,0,3.13H10.435V23.9a12.11,12.11,0,0,0,3.13,0V13.565H23.9a12.11,12.11,0,0,0,0-3.13Z" fill="#d80027"/>
+    <path id="Path_40" data-name="Path 40" d="M322.783,322.783h0l5.355,5.355q.369-.369.705-.77l-4.584-4.585h-1.476Z" transform="translate(-307.653 -307.653)" fill="#d80027"/>
+    <path id="Path_41" data-name="Path 41" d="M80.335,322.784h0l-5.355,5.355q.369.369.77.705l4.584-4.585Z" transform="translate(-71.465 -307.654)" fill="#d80027"/>
+    <path id="Path_42" data-name="Path 42" d="M65.993,80.335h0L60.638,74.98q-.369.369-.705.77l4.585,4.585h1.476Z" transform="translate(-57.124 -71.465)" fill="#d80027"/>
+    <path id="Path_43" data-name="Path 43" d="M322.783,65.994h0l5.355-5.355q-.369-.369-.77-.705l-4.585,4.585Z" transform="translate(-307.653 -57.125)" fill="#d80027"/>
+  </g>
+</svg>

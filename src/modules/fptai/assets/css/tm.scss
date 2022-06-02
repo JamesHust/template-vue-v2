@@ -1,0 +1,55 @@
+.centerX {
+  display: flex;
+  justify-content: center;
+}
+
+.centerY {
+  display: flex;
+  align-items: center;
+}
+
+.centerXY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spreadX {
+  width: 100%;
+}
+
+.spreadY {
+  height: 100%;
+}
+
+.spreadXY {
+  width: 100%;
+  height: 100%;
+}
+
+.screenXY {
+  width: 100vw;
+  height: 100vh;
+}
+
+.spin {
+  animation: spin 2s infinite linear;;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

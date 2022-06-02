@@ -1,0 +1,8 @@
+const nlpActionTypes = {
+    INTENT_LIST: 'INTENT_LIST',
+    GET_INTENT_LIST: 'GET_INTENT_LIST',
+    ENTITY_TYPE_LIST: 'ENTITY_TYPE_LIST',
+    GET_ENTITY_TYPE_LIST: 'GET_ENTITY_TYPE_LIST'
+}
+
+export default nlpActionTypes

@@ -1,0 +1,34 @@
+# Run: gcloud builds submit . --config=cloudbuild.yaml
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        docker pull "gcr.io/fpt-ai/kb-plat-fe:${_ENV}" || true
+        docker build \
+            --cache-from "gcr.io/fpt-ai/kb-plat-fe:${_ENV}" \
+            -t gcr.io/fpt-ai/kb-plat-fe:${_TAG} \
+            -t gcr.io/fpt-ai/kb-plat-fe:${_ENV} \
+            -t gcr.io/fpt-ai/kb-plat-fe:latest \
+            -f Dockerfile \
+            --build-arg ARG_BRANCH=${_BRANCH} \
+            --build-arg ARG_VERSION="${_VERSION}" \
+            --build-arg ARG_IMG_TAG=${_TAG} \
+            --build-arg ARG_ENV=${_ENV} \
+            --build-arg ARG_BUILD_DATE="${_BUILD_DATE}" \
+            .
+substitutions:
+  _ENV: dev
+  _TAG: default
+  _BRANCH: default
+  _VERSION: default deafult default
+  _BUILD_DATE: default
+
+images: [
+  'gcr.io/fpt-ai/kb-plat-fe:${_TAG}',
+  'gcr.io/fpt-ai/kb-plat-fe:${_ENV}',
+  'gcr.io/fpt-ai/kb-plat-fe:latest',
+]
+
+timeout: 1800s

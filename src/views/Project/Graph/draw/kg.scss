@@ -1,0 +1,86 @@
+svg::v-deep {
+    display: block;
+
+    .g-marker path {
+        fill: #0052CC;
+    }
+
+    .g-wrap-node {
+        circle {
+            fill: #E6F4FF;
+            stroke: #0052CC;
+            cursor: pointer;
+        }
+
+        text {
+            fill: #262626;
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .point {
+            opacity: 0;
+        }
+
+
+        &:hover {
+            .point {
+                opacity: 1;
+            }
+        }
+
+        &.active {
+            circle {
+                stroke-width: 5px;
+            }
+        }
+    }
+
+    .g-wrap-link {
+        cursor: pointer;
+
+        path {
+            stroke: #2372D9;
+            fill: none;
+        }
+
+        rect {
+            fill: #E6F4FF;
+        }
+
+        text {
+            fill: #0052CC;
+            background: #fff;
+            font-size: 12px;
+        }
+
+        &.active {
+            path.link {
+                stroke: #E7A600;
+                //stroke-width: 5px;
+            }
+
+            text {
+                fill: #E7A600;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .g-wrap-node-overlay {
+        opacity: 0;
+
+        &.active {
+            opacity: 1;
+        }
+
+        circle {
+            fill: #0052CC;
+        }
+
+        line {
+            stroke: #0052CC;
+            stroke-width: 3px;
+        }
+    }
+}

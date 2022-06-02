@@ -1,0 +1,104 @@
+$borderColor: #F2F4FA;
+$borderColor2: #D0D4E2;
+$activeColor: #0052cc;
+
+.fci-page {
+  height: calc(100vh - 64px);
+}
+
+.fci-scrollbar {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.fci-list {
+  background: #fff;
+
+  .fci-list-item {
+    border-bottom: 1px solid $borderColor;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background: #f6f6f6;
+    }
+
+    &.active {
+      background: #ededf2;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  }
+
+  .fci-list-group {
+    border-bottom: 1px solid $borderColor;
+    padding: 5px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+
+.fci-transition {
+  transition: transform 0.3s ease;
+}
+
+.fci-error-message {
+  color: red;
+}
+
+.fci-input {
+  border: 1px solid #EDEDF2;
+  border-radius: 5px;
+  padding: 0 5px;
+  display: block;
+
+  &[disabled] {
+    background: #efefef;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.fci-label {
+  border-radius: 15px;
+  margin: 5px;
+  padding: 0 0 0 7px;
+  border: 1px solid rgba(0, 0, 0, .38);
+  display: flex;
+  align-items: center;
+}
+
+.fci-empty-item {
+  color: rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
